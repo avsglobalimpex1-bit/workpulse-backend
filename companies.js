@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const pool = require('../db');
+const pool = require('./db');
 
 // Create a new tenant/company (used during Owner sign-up / bootstrap)
 router.post('/', async (req, res) => {
