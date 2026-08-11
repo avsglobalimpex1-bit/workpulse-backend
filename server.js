@@ -20,13 +20,13 @@ app.get('/api/health', async (req, res) => {
   }
 });
 
-app.use('/api/companies', require('./routes/companies'));
-app.use('/api/staff', require('./routes/staff'));
-app.use('/api/tasks', require('./routes/tasks'));
-app.use('/api/attendance', require('./routes/attendance'));
-app.use('/api/advances', require('./routes/advances'));
-app.use('/api/travel', require('./routes/travel'));
-app.use('/api/audit', require('./routes/audit'));
+app.use('/api/companies', require('./companies'));
+app.use('/api/staff', require('./staff'));
+app.use('/api/tasks', require('./tasks'));
+app.use('/api/attendance', require('./attendance'));
+app.use('/api/advances', require('./advances'));
+app.use('/api/travel', require('./travel'));
+app.use('/api/audit', require('./audit'));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`WorkPulse API running on port ${PORT}`));
