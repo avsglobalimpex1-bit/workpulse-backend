@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const pool = require('../db');
+const pool = require('./db');
 
 /* Small helper to build the "id_prefix + next number" serial for a company */
 async function nextSerialForCompany(companyId) {
